@@ -1,0 +1,10 @@
+{
+  "name": "wn",
+  "bin": {
+    "wn": "bin.js"
+  },
+  "dependencies": {
+    "speaker": "^0.5.2",
+    "web-audio-api": "^0.2.2"
+  }
+}
