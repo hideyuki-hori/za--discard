@@ -3,15 +3,10 @@
 const { AudioContext } = require('web-audio-api')
 const Speaker = require('speaker')
 
-main()
-
-function main() {
-  switch ([...process.argv].pop()) {
-    case '--white': case '-w': return whiteNoise()
-    case '--pink': case '-p': return pinkNoise()
-    case '--brown': case '-b': return brownNoise()
-    default: return pinkNoise()
-  }
+switch ([...process.argv].pop()) {
+  case '--white': case '-w': return whiteNoise()
+  case '--pink': case '-p': default: return pinkNoise()
+  case '--brown': case '-b': return brownNoise()
 }
 
 function whiteNoise() {
