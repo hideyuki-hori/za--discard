@@ -1,7 +1,7 @@
 {
-  "name": "wn",
+  "name": "pour",
   "bin": {
-    "wn": "bin.js"
+    "pour": "bin.js"
   },
   "dependencies": {
     "speaker": "^0.5.2",
