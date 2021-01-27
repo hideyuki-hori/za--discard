@@ -10,6 +10,7 @@ function main() {
     case '--white': case '-w': return whiteNoise()
     case '--pink': case '-p': return pinkNoise()
     case '--brown': case '-b': return brownNoise()
+    default: return pinkNoise()
   }
 }
 
