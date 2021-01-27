@@ -5,8 +5,8 @@ const Speaker = require('speaker')
 
 switch ([...process.argv].pop()) {
   case '--white': case '-w': return whiteNoise()
-  case '--pink': case '-p': default: return pinkNoise()
-  case '--brown': case '-b': return brownNoise()
+  case '--pink': case '-p': return pinkNoise()
+  case '--brown': case '-b': default: return brownNoise()
 }
 
 function whiteNoise() {
