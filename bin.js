@@ -2,12 +2,15 @@
 
 const { AudioContext } = require('web-audio-api')
 const Speaker = require('speaker')
+const Volume = require('osx-volume-controls')
 
-switch ([...process.argv].pop()) {
-  case '--white': case '-w': return whiteNoise()
-  case '--pink': case '-p': return pinkNoise()
-  case '--brown': case '-b': default: return brownNoise()
-}
+Volume.set(10, () => {
+  switch ([...process.argv].pop()) {
+    case '--white': case '-w': return whiteNoise()
+    case '--pink': case '-p': return pinkNoise()
+    case '--brown': case '-b': default: return brownNoise()
+  }
+})
 
 function whiteNoise() {
   const context = createContext()

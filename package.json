@@ -4,6 +4,7 @@
     "za-": "bin.js"
   },
   "dependencies": {
+    "osx-volume-controls": "^1.0.1",
     "speaker": "^0.5.2",
     "web-audio-api": "^0.2.2"
   }
